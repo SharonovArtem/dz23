@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+using static System.Net.WebRequestMethods;
+
+namespace jun1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int minimalRandomNumber = 1;
+            int maximalRandomNumber = 50;
+            int arrayMinimalNumber = 0;
+            int arrayMaximalNumber = 29;
+            int[] array = new int[30];
+            Random random = new Random();
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = random.Next(minimalRandomNumber, maximalRandomNumber);
+                Console.WriteLine(array[i]);
+            }
+            for (int i = 0; i <= array.Length; i++)
+            {
+                if (i - 1 != arrayMinimalNumber - 1 && i + 1 != arrayMaximalNumber + 1)
+                {
+                    
+                }
+            }
+        }
+    }
+}
